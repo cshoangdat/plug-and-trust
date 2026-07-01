@@ -113,7 +113,7 @@
  */
 
 /** Use mbedTLS as host crypto */
-#define SSS_HAVE_HOSTCRYPTO_MBEDTLS 0
+#define SSS_HAVE_HOSTCRYPTO_MBEDTLS 1
 
 /** Use OpenSSL as host crypto */
 #define SSS_HAVE_HOSTCRYPTO_OPENSSL 0
@@ -131,7 +131,7 @@
  * Note, this is unsecure and only provided for experimentation
  * on platforms that do not have an mbedTLS PORT
  * Many :ref:`sssftr-control` have to be disabled to have a valid build. */
-#define SSS_HAVE_HOSTCRYPTO_NONE 1
+#define SSS_HAVE_HOSTCRYPTO_NONE 0
 
 #if (( 0                             \
     + SSS_HAVE_HOSTCRYPTO_MBEDTLS    \
